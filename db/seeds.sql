@@ -1,6 +1,6 @@
-INSERT INTO burgers (burger_name) VALUES ('Cheeseburger');
-INSERT INTO burgers (burger_name) VALUES ('Hamburger');
-INSERT INTO burgers (burger_name) VALUES ('Crapburguer');
-INSERT INTO burgers (burger_name) VALUES ('Scienceburger');
-INSERT INTO burgers (burger_name) VALUES ('Fishburger');
-INSERT INTO burgers (burger_name) VALUES ('Toadburger');
+INSERT INTO burgers (burger_name, devoured) VALUES ('Cheeseburger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Hamburger', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Crapburguer', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Scienceburger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Fishburger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Toadburger', false);

@@ -2,22 +2,22 @@ var express = require("express");
 
 var router = express.Router();
 
-var cat = require("../models/burguer.js");
+var burger = require("../models/burger.js");
 
 
 
 router.get("/", function (req, res) {
-  cat.all(function (data) {
+  burger.selectAll(function (data) {
     var hbsObject = {
-      cats: data,
+      burgers: data,
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
-router.post("/api/cats", function (req, res) {
-  cat.create(["name", "sleepy"], [req.body.name, req.body.sleepy], function (
+router.post("/api/burguers", function (req, res) {
+  burger.insertOne(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function (
     result
   ) {
     // Send back the ID of the new quote
@@ -27,13 +27,13 @@ router.post("/api/cats", function (req, res) {
   });
 });
 
-router.put("/api/cats/:id", function (req, res) {
+router.put("/api/burguers/:id", function (req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
 
-  cat.update({
-      sleepy: req.body.sleepy,
+  burger.updateOne({
+      devoured: req.body.devoured,
     },
     condition,
     function (result) {
