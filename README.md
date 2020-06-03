@@ -21,9 +21,8 @@ This is a funny App that lets users log their desired burgers to be devoured and
 
 * [Contributing](#contributing)
 
-* [Tests](#tests)
-
 * [Questions](#questions)
+
 
 ## Technologies Used
 
@@ -32,7 +31,6 @@ This is a funny App that lets users log their desired burgers to be devoured and
 [Just click this Link to the application](https://h13-da-burger.herokuapp.com)
                     
                         
-
 ## Usage
 
 type the burger you wish to add to the list, click the button tht says "add", and that name will go into that list, until you press the button "devour" next to the specific burger name. If you wish to bring one of the already tried burgers back to the "devour" list, just press "Barf Da Burger" button. 
